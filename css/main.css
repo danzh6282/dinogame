@@ -1,0 +1,43 @@
+.profile{
+    width:300px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0px;
+    padding: 20px;
+}
+
+ol{
+    border-right: 1px solid gray;
+    width:100px;
+    margin: 0px;
+    padding: 20px;
+}
+
+
+a{
+    text-decoration-line: none; 
+    color: black;
+    /*text-decoration-style: dotted; */
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+h2{
+    color: brown;
+}
+.ch2{
+    color: blue;
+}
+#ih2{
+    color: purple;
+}
