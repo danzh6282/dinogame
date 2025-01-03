@@ -128,15 +128,16 @@ function collision(dino, cactus) {
     ctx.textAlign = 'center';
     var x_len = cactus.x - (dino.x + dino.width);
     var y_len = cactus.y - (dino.y + dino.height);
+    var y_len_2 = dino.y - (cactus.y + cactus.height);
 
-    if (x_len < 10){
+    if (x_len < 20){
         var random = Math.floor(Math.random()*100 + 1);
         if(random == 5){
             jump_cactus = true
         }
     }
 
-    if ((cactus.x > 50 && x_len < -60) && (-y_len < -50 || y_len < -50)) {
+    if ((cactus.x > 50 && x_len < -50) && (y_len_2 < -50 && y_len < -50)) {
         ctx.fillText("Game Over!!!", canvas.width / 2, canvas.height / 2);
         cancelAnimationFrame(animation);
     }
